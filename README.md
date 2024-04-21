@@ -13,6 +13,6 @@ The installation process is actually quite simple.
 `curl -O https://raw.githubusercontent.com/gingerale20/XSS_Dev-1.2/main/install.sh`
 3) Again, with `chmod 755 $HOME/install.sh`, although this may need to be ran as root, meaning that you would use your directory of your home folder instead of `$HOME`
 4) Run `$HOME/install.sh`
-5) The process is now complete! Enjoy using XSS_Dev!
+5) The process is now complete! Enjoy using XSS_Dev! To run XSS_Dev, type `xss_dev` into your terminal.
 
 ***Stand up for minority groups!***
