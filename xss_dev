@@ -1,0 +1,60 @@
+#! /usr/bin/env python3
+
+import os
+import time
+import random
+from delay import *
+import urllib.parse
+
+# One big final step left: write the program.
+try:
+    delay.print("""db    db .d8888. .d8888.         d8888b. d88888b db    db 
+`8b  d8' 88'  YP 88'  YP         88  `8D 88'     88    88 
+ `8bd8'  `8bo.   `8bo.           88   88 88ooooo Y8    8P 
+ .dPYb.    `Y8b.   `Y8b.         88   88 88~~~~~ `8b  d8' 
+.8P  Y8. db   8D db   8D         88  .8D 88.      `8bd8'  
+YP    YP `8888Y' `8888Y' C88888D Y8888D' Y88888P    YP    
+-----v1.2""", "0.003")
+    l1 = ['The return of XSS', 'The Uprise (Again)', 'Again...', 'Possibly wont screw up again', 'The downfall', 'CHEESE', 'IT', '''qwertyuiop
+asdfghjkl
+zxcvbnm''', 'I am a god.', 'Developed by the last person on github you would expect. I say this in truth.', 'Bit Mafia Development', 'New Motion Pictures in Theater Now! (if anyone has any ideas)', "Where is Thailand? Some people can't answer that. Sad."]
+    print('')
+    print(random.choice(l1))
+    print('')
+    delay.print("""Please use this software ethically.
+Options:
+[1] Encode JS
+[2] Encode Pasted EvilPortal HTML File
+[3] Exit""", "0.07")
+    optn = input('~ ')
+    if optn == "1":
+        delay.in_pr('JS Code: ', "0.07")
+        code = input('')
+        delay.print('Loading...', "0.07")
+        time.sleep(4)
+        code2 = "<script>"+code+"</script>"
+        encoded_code = urllib.parse.quote(code2)
+        URL = "data:text/html," + encoded_code
+        delay.print("Copy the following code: ", "0.07")
+        print('')
+        print(URL)
+        print('')
+    if optn == "2":
+        delay.in_pr('Paste HTML Code: ', '0.07')
+        code = input('')
+        delay.print('Loading...', '0.07')
+        time.sleep(4)
+        encoded_code = urllib.parse.quote(code)
+        URL = "data:text/html," + encoded_code
+        delay.print('Copy the following code: ', '0.07')
+        print('')
+        print(URL)
+        print('')
+    if optn == "3":
+        delay.print('Quitting...', '0.07')
+        time.sleep(4)
+        os.system('exit')
+except:
+    print("""
+""")
+    print('crtl-c Pressed. Quitting...')
