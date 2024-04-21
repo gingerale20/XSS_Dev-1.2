@@ -14,3 +14,5 @@ The installation process is actually quite simple.
 3) Again, with `chmod 755 $HOME/install.sh`, although this may need to be ran as root, meaning that you would use your directory of your home folder instead of `$HOME`
 4) Run `$HOME/install.sh`
 5) The process is now complete! Enjoy using XSS_Dev!
+
+***Stand up for minority groups!***
